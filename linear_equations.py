@@ -27,6 +27,6 @@ def build_regression_line(x_values, y_values):
     sorted_values = sorted_points(x_values, y_values)
     highest = sorted_values[-1]
     lowest = sorted_values[0]
-    m = slope(x_values, y_values)
+    m = slope(x_values, y_values) # slope between the first and last points
     b = y_intercept(x_values, y_values, m)
     return {'slope': m, 'int': b}
